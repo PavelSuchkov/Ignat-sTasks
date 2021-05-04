@@ -1,0 +1,50 @@
+.messageWrapper {
+    display: flex;
+    width: 400px;
+    height: 200px;
+    background-color: darkorange;
+    padding: 20px;
+}
+
+.messageWrapper .messageContent {
+    background-color: black;
+    min-height: 70px;
+    width: 70%;
+    align-self: flex-end;
+    padding: 10px;
+    border-radius: 12px 12px 12px 0;
+}
+
+.triangle{
+    width: 25px;
+    height: 25px;
+    background: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 25px, black 0);
+    align-self: flex-end;
+}
+
+.messageWrapper .messageContent .name {
+    color: purple;
+    font-size: 17px;
+}
+
+.messageWrapper .messageContent .innerMessage {
+    word-wrap: break-word;
+    color: greenyellow;
+}
+
+.messageWrapper .messageContent .time {
+    color: darkgray;
+    text-align: right;
+}
+
+.avatarWrapper {
+    width: 20%;
+    height: 80px;
+    align-self: flex-end;
+}
+
+.messageWrapper img {
+    border-radius: 50%;
+    width: 70px;
+}
+
