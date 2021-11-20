@@ -1,0 +1,45 @@
+.checkBoxBlock {
+    width: 266px;
+    height: 14px;
+    margin-bottom: 22px;
+}
+
+.check {
+    margin-right: 6px;
+    cursor: pointer;
+}
+
+.styledCheck {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #BDBDBD;
+    position: relative;
+    margin-right: 6px;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.styledCheck::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #00576A;
+    border-radius: 2px;
+    opacity: 0;
+    transition: .2s;
+}
+
+.check:checked + .styledCheck::before {
+    background: url("./img/checked.png");
+    opacity: 1;
+
+}
+
+.checkDescription {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+}
